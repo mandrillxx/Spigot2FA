@@ -8,11 +8,8 @@ import java.sql.*;
 public class UtilDatabase {
 
     private Connection connection = null;
-    private final File dataFolder;
 
     public UtilDatabase(File dataFolder) {
-        this.dataFolder = dataFolder;
-
         try {
             connection = DriverManager.getConnection("jdbc:sqlite:" + dataFolder);
             createTable();
@@ -27,7 +24,7 @@ public class UtilDatabase {
         String sql = "CREATE TABLE IF NOT EXISTS \"codes\" (\"uuid\" varchar(50) NOT NULL, \"code\" varchar(255) NOT NULL);";
 
         try {
-            Statement stmt = getConnection().createStatement();;
+            Statement stmt = getConnection().createStatement();
 
             stmt.executeUpdate(sql);
 

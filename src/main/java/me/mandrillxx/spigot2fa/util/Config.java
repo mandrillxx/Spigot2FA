@@ -13,6 +13,13 @@ import java.lang.reflect.Modifier;
 import java.util.List;
 import java.util.logging.Level;
 
+/**
+ * @author Paper Development Team
+ * This class is a *barely* modified version of papers
+ * built in Config, taken directly from their server
+ * source code. No credit is taken for this by me.
+ */
+@SuppressWarnings("all")
 public class Config {
 
     private static File CONFIG_FILE;

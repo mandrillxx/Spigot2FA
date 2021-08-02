@@ -3,7 +3,6 @@ package me.mandrillxx.spigot2fa.player;
 import me.mandrillxx.spigot2fa.Spigot2FA;
 import me.mandrillxx.spigot2fa.util.Config;
 import me.mandrillxx.spigot2fa.util.UtilTwoFactor;
-import net.kyori.adventure.text.Component;
 import net.md_5.bungee.api.chat.*;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -13,7 +12,6 @@ import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.player.*;
 
-import java.math.BigDecimal;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -21,6 +19,7 @@ import java.util.UUID;
 
 import static org.bukkit.ChatColor.*;
 
+@SuppressWarnings("deprecation")
 public class AuthListener implements Listener {
 
     private final UtilTwoFactor utilTwoFactor;

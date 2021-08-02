@@ -1,5 +1,6 @@
 package me.mandrillxx.spigot2fa;
 
+import me.mandrillxx.spigot2fa.commands.Command2FA;
 import me.mandrillxx.spigot2fa.player.AuthListener;
 import me.mandrillxx.spigot2fa.util.Config;
 import me.mandrillxx.spigot2fa.util.UtilDatabase;
@@ -37,6 +38,7 @@ public final class Spigot2FA extends JavaPlugin {
         database = new UtilDatabase(new File(getDataFolder(), "data.db"));
 
         getServer().getPluginManager().registerEvents(new AuthListener(new UtilTwoFactor()), this);
+        getServer().getCommandMap().register("2fa", new Command2FA());
         getLogger().info("Successfully enabled Spigot2FA.");
     }
 

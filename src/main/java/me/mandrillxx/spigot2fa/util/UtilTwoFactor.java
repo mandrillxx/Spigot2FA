@@ -12,7 +12,7 @@ public class UtilTwoFactor {
     /** default time-step which is part of the spec, 30 seconds is default */
     public static final int TIME_STEP_SECONDS = 30;
     /** set to the number of digits to control 0 prefix, set to 0 for no prefix */
-    private static int NUM_DIGITS_OUTPUT = 6;
+    private static final int NUM_DIGITS_OUTPUT = 6;
 
     private final String blockOfZeros;
 
