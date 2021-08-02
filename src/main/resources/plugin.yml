@@ -1,5 +1,5 @@
 name: Spigot2FA
 version: @version@
 main: me.mandrillxx.spigot2fa.Spigot2FA
-api-version: 1.17
+api-version: 1.16
 description: Require players with a certain permission to enter a 2FA code before accessing the server.
